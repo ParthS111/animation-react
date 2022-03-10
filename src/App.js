@@ -1,13 +1,13 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Article, Brand, CTA, Navbar } from './components/index'
-import { Features, Header, Blog, Possibility } from './containers/index'
+import { Features, Header, Blog, Possibility ,WhatGPT3} from './containers/index'
 const App = () => {
 
   useEffect(() => {
-    document.addEventListener('contextmenu', (e) => {
-      e.preventDefault();
-    });
+    // document.addEventListener('contextmenu', (e) => {
+    //   e.preventDefault();
+    // });
   },[])
   return (
     <div className="App">
@@ -16,6 +16,7 @@ const App = () => {
         <Header />
       </div>
       <Brand />
+      <WhatGPT3 />
       <Features />
       <CTA />
       <Blog />
